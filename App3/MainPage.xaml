@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Aquamarine">
+            <Label Text="Informacion Personal" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black" FontSize="30"
+                   />
+           
+               
+        </Frame>
+        <StackLayout>
+            <Image Source="https://cdn-icons-png.flaticon.com/512/2621/2621824.png"/>
+            
+        </StackLayout>
+        <Label Text="Nombre"
+               TextColor="White" 
+               FontSize="20" 
+               FontAttributes="Bold"/>
+
+        <Entry x:Name="nombretext"/>
+        <Label Text="Apellido"  
+               TextColor="White" 
+               FontSize="20" 
+               FontAttributes="Bold"/>
+
+        <Entry x:Name="Apellitext"/>
+        <Label Text="Edad" 
+               TextColor="White" 
+               FontSize="20" 
+               FontAttributes="Bold"/>
+        <Entry x:Name="Edadtext"/>
+        <Label Text="Correo Electronico"
+               TextColor="White"
+               FontSize="20"
+               FontAttributes="Bold"/>
+        <Entry x:Name="Correotext"/>
+        <Button Text="Enviar informacion"
+                TextColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                x:Name="Envia" Clicked="Envia_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
